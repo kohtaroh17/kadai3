@@ -54,12 +54,12 @@
             </li>
             <li class="nav-item">
               <%= link_to new_user_registration_path, class: 'nav-link text-dark' do %>
-              <i class="fas fa-user-plus"></i>Sing_up
+              <i class="fas fa-user-plus"></i>Sign up
               <% end %>
             </li>
             <li class="nav-item">
               <%= link_to new_user_session_path, class: 'nav-link text-dark' do %>
-              <i class="fas fa-sign-out-alt"></i>Sing_in
+              <i class="fas fa-sign-in-alt"></i>Log in
               <% end %>
             </li>
             <% end %>
@@ -68,11 +68,11 @@
         </div>
       </nav>
     </header>
-    
+
     <% flash.each do |key, value| %>
      <%= content_tag(:div, value, class: "#{key}") %>
     <% end %>
-   
+
     <%= yield %>
 
     <footer>
